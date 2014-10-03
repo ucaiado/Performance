@@ -1,0 +1,37 @@
+body{
+	font-family: 'Lato', sans-serif;
+	font-color: #747704;
+	font-weight: 300;
+}
+
+a:hover {
+    color: #BCBBBB;
+    text-decoration: underline;
+}
+
+.text-muted{
+	color: #BCBBBB;	
+}
+
+.text-thin{
+	font-weight: 100;
+}
+
+.title-super{
+	margin-top: 20px;
+	font-size: 40px;
+
+}
+
+.title-logo{
+	margin-top: 15px;
+}
+
+#link-decoration{
+	color: #333333;	
+}
+#link-decoration:hover{
+	color: #EE9A00;
+	text-decoration: none;
+}
+

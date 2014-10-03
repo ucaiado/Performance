@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+                $(".various").fancybox({
+                    type: 'inline',
+                    maxWidth: 999,
+                    maxHeight: 999,
+                    width: '100%',
+                    height: '100%',
+                    'scrolling': 'no',
+                    'titleShow': false,
+                    'onClosed': function() {$("#login_error").hide();}
+                    });
+                });
+    </script>
+
+    <style type="text/css">
+        {% include "main.css"%}
+    </style>
+
+    <meta charset="UTF-8">
+    <title> {{s_nomeTab}}</title>
+</head>
+
+<body>
+    {% block content %}
+    {% endblock %}
+</body>
+
+</html>

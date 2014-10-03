@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+    <div class="text_cell_render border-box-sizing rendered_html">
+        <h1>RELATORIO DE PERFORMANCE</h1>
+            <hr/>
+            <h2>DESCRICAO DOS DADOS</h2>
+    </div>
+
+    {{c_summ_dfHtml}}
+    <br/><br/><br/><br/>
+
+    <div class="text_cell_render border-box-sizing rendered_html">
+        <h2>PERFORMANCE GERAL</h2>
+    </div>
+
+
+    <table class="noFormatation">
+        <tr class="noFormatation">
+            <td class="noFormatation">
+                {{c_perf_figHtml}}
+            </td>
+            <td class="noFormatation">
+                {{c_summ_figHtml}}
+            </td>
+        </tr>
+    </table>
+
+    {{c_perf_dfHtml3}}
+    <br/><br/><br/><br/>
+
+    <div class="text_cell_render border-box-sizing rendered_html">
+        <h2 class="2">    SUMARIO DE OPERACOES</h2>
+    </div>
+
+    <table class="noFormatation">
+        <tr class="noFormatation">
+            <td class="noFormatation">
+                {{c_Trdsumm_figHtml}}
+            </td>
+            <td class="noFormatation">
+                {{c_ProfitandUnprofit_figHtml}}
+            </td>
+        </tr>
+    </table>
+
+    {{c_Trdsumm_dfHtml}}
+    {{c_ProfitandUnprofit_dfHtml3}}
+    {{ c_ProfitandUnprofit_dfHtml4}}
+    <br/><br/><br/><br/>
+
+    <div class="text_cell_render border-box-sizing rendered_html">
+        <h2 class="2">PRECO MEDIO</h2>
+    </div>
+
+
+
+    <table class="noFormatation">
+        <tr class="noFormatation">
+            <td class="noFormatation">
+                {{ c_PrM_figHtml}}
+            </td>
+            <td class="noFormatation">
+                {{c_PrM_figHtml2}}
+            </td>
+            <td class="noFormatation">
+                {{c_PrM_figHtml3}}
+            </td>
+        </tr>
+    </table>
+
+
+    {{c_PrM_dfHtml}}
+    <br/><br/><br/><br/>
+    <br/>
+{% endblock %}
